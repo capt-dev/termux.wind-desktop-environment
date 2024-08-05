@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # Start Termux X11
 termux-x11 :1 -legacy-drawing &
-
+sleep 4
 # Export DISPLAY variable
 export DISPLAY=:1
 
