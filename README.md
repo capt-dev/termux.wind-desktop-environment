@@ -31,3 +31,7 @@ this is the entire installation script
 # termux x11 config
 it is recommended to ![Screenshot_2024-08-05-17-23-21-50_00df01c412509efb9bd6450c382822af](https://github.com/user-attachments/assets/b9be76af-0d43-4a91-9ba1-1efb8c7ba6de)
 have this configuration also turn off "show additional keyboard" so you can get a more immersive experience and everything else is up to preference...
+# screenshots 
+![Screenshot_2024-08-04-08-36-46-23_00df01c412509efb9bd6450c382822af](https://github.com/user-attachments/assets/7df9491d-5920-4557-ad0f-d92b99f87c84)
+![Screenshot_2024-08-05-18-58-28-50_00df01c412509efb9bd6450c382822af](https://github.com/user-attachments/assets/42153e42-2372-47e9-b5ef-8f354a616b7d)
+![Screenshot_2024-08-05-18-58-55-75_00df01c412509efb9bd6450c382822af](https://github.com/user-attachments/assets/339d3531-9d3e-4fb9-b520-5e2b3b7ede58)
