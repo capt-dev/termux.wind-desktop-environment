@@ -1,3 +1,4 @@
+cd ~/termux.wind-desktop-environment
 echo "installing necessary packages..."
 pkg update && pkg upgrade
 pkg install -y x11-repo && pkg install -y termux-x11-nightly openbox xfce4-panel xcompmgr pcmanfm nitrogen cairo-dock-core wget zip unzip gedit firefox
