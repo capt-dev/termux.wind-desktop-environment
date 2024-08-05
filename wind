@@ -23,7 +23,7 @@ xcompmgr -c -t3 -l5 -f &
 pcmanfm --desktop &
 
 # Set a wallpaper using Nitrogen
-nitrogen --set-auto ~/.icons/cool.png &
+pcmanfm --set-wallpaper ~/.icons/cool.png
 
 # Start Cairo-Dock
 cairo-dock -f &
