@@ -28,3 +28,6 @@ this is all the installation very easy we have a installation script that does a
 pkg update && pkg upgrade && pkg install git wget && git clone https://github.com/capt-dev/termux.wind-desktop-environment.git && cd termux.wind-desktop-environment && bash wind_install.sh
 ```
 this is the entire installation script
+# termux x11 config
+it is recommended to ![Screenshot_2024-08-05-17-23-21-50_00df01c412509efb9bd6450c382822af](https://github.com/user-attachments/assets/b9be76af-0d43-4a91-9ba1-1efb8c7ba6de)
+have this configuration also turn off "show additional keyboard" so you can get a more immersive experience and everything else is up to preference...
