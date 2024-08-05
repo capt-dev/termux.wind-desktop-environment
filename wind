@@ -1,0 +1,54 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# Function to check if Termux X11 is installed
+check_termux_x11_installed() {
+    if ! pm list packages | grep -q "com.termux.x11"; then
+        echo "Termux X11 is not installed. Please install Termux X11 from the GitHub repository..."
+        exit 1
+    fi
+}
+
+# Function to check and install required packages
+check_and_install_packages() {
+    # List of required packages
+    local packages=("x11-repo" "xfce4-goodies" "termux-x11-nightly" "openbox" "xfce4" "xcompmgr" "pcmanfm" "nitrogen" "cairo-dock-core")
+
+    for pkg in "${packages[@]}"; do
+        if ! pkg list-installed | grep -q "$pkg"; then
+            echo "Package $pkg is not installed. Installing..."
+            pkg install "$pkg" -y
+        fi
+    done
+}
+
+# Main script execution
+check_termux_x11_installed
+check_and_install_packages
+
+# Start Termux X11
+termux-x11 :1 -legacy-drawing &
+
+# Export DISPLAY variable
+export DISPLAY=:1
+
+# Start Openbox session
+openbox-session &
+
+# Start xfce4-panel
+xfce4-panel &
+
+# Start xcompmgr with minimal fading
+xcompmgr -c -t3 -l5 -f &
+
+# Start PCManFM with desktop mode
+pcmanfm --desktop &
+
+# Set a wallpaper using Nitrogen
+nitrogen --set-auto ~/.icons/cool.png &
+
+# Start Cairo-Dock
+cairo-dock -f &
+
+# Start Termux X11 app
+sleep 4
+am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity
