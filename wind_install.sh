@@ -1,7 +1,7 @@
 cd ~/termux.wind-desktop-environment
 echo "installing necessary packages..."
 pkg update && pkg upgrade
-pkg install -y x11-repo && pkg install -y termux-x11-nightly openbox xfce4-panel xcompmgr pcmanfm nitrogen cairo-dock-core wget zip unzip gedit firefox dbus gimp
+pkg install -y x11-repo && pkg install -y termux-x11-nightly openbox xfce4 xfce4-goodies xcompmgr pcmanfm cairo-dock-core wget zip unzip gedit firefox dbus gimp
 echo "getting required configuration folder...(warning this will destroy all configurations)"
 unzip .config.zip
 rm .config.zip
