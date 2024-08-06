@@ -5,29 +5,29 @@ termux-x11 :1 -legacy-drawing &
 export DISPLAY=:1
 dbus-launch
 }
-startx11
+startx11 >> /dev/null 2>&1
 sleep 4
 # Export DISPLAY variable
 export DISPLAY=:1
 
 # Start Openbox session
-openbox-session &
+openbox-session & >> /dev/null 2>&1
 
 # Start xfce4-panel
-xfce4-panel &
+xfce4-panel & >> /dev/null 2>&1
 
 # Start xcompmgr with minimal fading
-xcompmgr -c -t3 -l5 -f &
+xcompmgr -c -t3 -l5 -f & >> /dev/null 2>&1
 
 # Start PCManFM with desktop mode
-pcmanfm --desktop &
+pcmanfm --desktop & >> /dev/null 2>&1
 
 # Set a wallpaper using Nitrogen
-pcmanfm --set-wallpaper ~/.icons/cool.png
+pcmanfm --set-wallpaper ~/.icons/cool.png >> /dev/null 2>&1
 
 # Start Cairo-Dock
-cairo-dock -f &
+cairo-dock -f & >> /dev/null 2>&1
 
 # Start Termux X11 app
 sleep 4
-am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity
+am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity >> /dev/null 2>&1
