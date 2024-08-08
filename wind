@@ -5,6 +5,7 @@ termux-x11 :1 -legacy-drawing &
 export DISPLAY=:1
 dbus-launch
 }
+echo "starting wind"
 startx11 >> /dev/null 2>&1
 sleep 4
 # Export DISPLAY variable
@@ -27,7 +28,7 @@ pcmanfm --set-wallpaper ~/.icons/cool.png >> /dev/null 2>&1
 
 # Start Cairo-Dock
 cairo-dock -f & >> /dev/null 2>&1
-
+echo "almost finished"
 # Start Termux X11 app
-sleep 4
+sleep 3
 am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity >> /dev/null 2>&1
