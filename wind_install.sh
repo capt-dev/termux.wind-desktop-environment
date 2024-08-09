@@ -7,8 +7,10 @@ echo "installing all utils(this will take a while)..."
 pkg install -y x11-repo >> /dev/null 2>&1 && pkg install -y proot proot-distro termux-x11-nightly openbox xfce4-terminal xfce4-appfinder xfce4-screenshooter xfce4-power-manager xfce4-notifyd xfce4-taskmanager xfce4-goodies xfce4-panel xcompmgr pcmanfm cairo-dock-core wget zip unzip gedit firefox dbus gimp >> /dev/null 2>&1
 pd install debian >> /dev/null 2>&1
 pd login debian -- apt update -y >> /dev/null 2>&1
-pd login debian -- apt install tightvncserver openshot-qt -y >> /dev/null 2>&1
+pd login debian -- apt install dbus tightvncserver openshot-qt -y >> /dev/null 2>&1
 pd login debian -- vncpasswd
+echo 'tigervncserver :1' > /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/debian/root/openshot.sh
+echo "echo 'dbus-launch && openshot-qt' > /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/debian/root/.vnc/xstartup
 clear
 echo "getting required configuration folder...(warning this will destroy all configurations)"
 unzip .config.zip >> /dev/null 2>&1
