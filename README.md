@@ -31,7 +31,7 @@ this is the entire installation script
 # apps
 all the applications installed when installing this desktop environment are
 ```list
-openbox xfce4-terminal xfce4-appfinder xfce4-screenshooter xfce4-power-manager xfce4-notifyd xfce4-taskmanager xfce4-goodies xfce4-panel xcompmgr pcmanfm cairo-dock-core wget zip unzip gedit firefox dbus gimp blender
+vlc gnumeric abiword vlc-qt termux-x11-nightly openbox xfce4-terminal xfce4-appfinder xfce4-screenshooter xfce4-notifyd xfce4-taskmanager xfce4-goodies xfce4-panel xcompmgr pcmanfm cairo-dock-core wget zip unzip gedit firefox dbus gimp blender
 ```
 they are not meant for copying as you can see most of the applications are from xfce4 also the images of the bottom are different from the images that are now since we have added more things to the desktop environment like blender a powerful 3d model and video editor which is very heavy so you will need a very high-end phone for it because this is the only available video-editor/3d-model editor available for termux
 # termux x11 config
