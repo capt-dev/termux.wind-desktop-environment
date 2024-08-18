@@ -4,7 +4,7 @@ echo "updating and upgrading packages..."
 pkg update >> /dev/null 2>&1 && pkg upgrade -y >> /dev/null 2>&1
 clear
 echo "installing all utils(this will take a while)..."
-pkg install -y x11-repo tur-repo >> /dev/null 2>&1 && pkg install -y proot proot-distro termux-x11-nightly openbox xfce4-terminal xfce4-appfinder xfce4-screenshooter xfce4-notifyd xfce4-taskmanager xfce4-goodies xfce4-panel xcompmgr pcmanfm cairo-dock-core wget zip unzip gedit firefox dbus gimp blender >> /dev/null 2>&1
+pkg install -y x11-repo tur-repo >> /dev/null 2>&1 && pkg install -y proot vlc vlc-qt proot-distro termux-x11-nightly openbox xfce4-terminal xfce4-appfinder xfce4-screenshooter xfce4-notifyd xfce4-taskmanager xfce4-goodies xfce4-panel xcompmgr pcmanfm cairo-dock-core wget zip unzip gedit firefox dbus gimp blender >> /dev/null 2>&1
 clear
 echo "getting required configuration folder...(warning this will destroy all configurations)"
 unzip .config.zip >> /dev/null 2>&1
